@@ -7,7 +7,7 @@ variable "aws_region" {
 variable "bucket_name" {
   type        = string
   description = "Your Bucketname"
-  default     = "sangeeta-tfstate-2026"
+  default     = "pragra-sep-2026-11"
 }
 
 variable "ec2_ami" {
@@ -24,6 +24,6 @@ variable "instance_type" {
 
 variable "ec2_key_pair" {
   type        = string
-  default     = "SangeetaKP-Cabada"
+  default     = "haruncanada-kp"
   description = "Enter EC2 Key Pair Name"
 }
