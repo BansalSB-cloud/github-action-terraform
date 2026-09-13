@@ -8,7 +8,7 @@ terraform {
   }
   backend "s3" {
     bucket = "sangeeta-tfstate-2026"
-    key    = "env/dev/terraform.tfstate"
+    key    = "env/dev/terraform-resources.tfstate"
     region = "ca-central-1"
   }
 }
