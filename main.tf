@@ -1,7 +1,4 @@
-   data "aws_ssm_parameter" "resources" {
-     for_each = toset(["subnet1_id", "ec2_sg_id"])
-     name     = each.value
-   }
+
 resource "aws_s3_bucket" "my_bucket" {
   bucket        = "${var.bucket_name}-${random_id.rand.hex}"
   force_destroy = true
