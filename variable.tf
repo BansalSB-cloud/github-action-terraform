@@ -27,4 +27,3 @@ variable "ec2_key_pair" {
   default     = "haruncanada-kp"
   description = "Enter EC2 Key Pair Name"
 }
-

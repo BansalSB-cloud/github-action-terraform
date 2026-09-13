@@ -16,19 +16,8 @@ resource "aws_instance" "public_ec2" {
   key_name               = var.ec2_key_pair
   subnet_id              = data.aws_ssm_parameter.resources["subnet1_id"].value
   vpc_security_group_ids = [data.aws_ssm_parameter.resources["ec2_sg_id"].value]
-     tags = {
-       Name = "Public_EC2"
-     }
-   }
-   resource "aws_instance" "public_ec2" {
-  ami                    = var.ec2_ami
-  instance_type          = var.instance_type
-  key_name               = var.ec2_key_pair
-  subnet_id              = data.aws_ssm_parameter.resources["subnet1_id"].value
-  vpc_security_group_ids = [data.aws_ssm_parameter.resources["ec2_sg_id"].value]
 
   tags = {
     Name = "Public_EC2"
   }
 }
-
