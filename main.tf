@@ -20,4 +20,4 @@ resource "aws_instance" "public_ec2" {
   tags = {
     Name = "Public_EC2"
   }
-}
+}# Updated
