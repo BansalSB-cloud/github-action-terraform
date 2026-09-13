@@ -7,7 +7,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "pragra-tfstate-2026"
+    bucket = "sangeeta-tfstate-2026"
     key    = "env/dev/terraform.tfstate"
     region = "ca-central-1"
   }
