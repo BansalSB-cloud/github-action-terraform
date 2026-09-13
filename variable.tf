@@ -24,6 +24,6 @@ variable "instance_type" {
 
 variable "ec2_key_pair" {
   type        = string
-  default     = "haruncanada-kp"
+  default     = "SangeetaKP-Cabada"
   description = "Enter EC2 Key Pair Name"
 }
